@@ -7,11 +7,11 @@ const App = () => {
   const [count, setCount] = useState(0);
 
   function click() {
-    setCount(`Button clicked ${count++} times`);
+    setCount(count+1);
   }
   return (
     <div>
-        <p>{count}</p>
+        <p>Button clicked {count} times</p>
         <button onClick={click}>Click me</button>
     </div>
   )
